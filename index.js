@@ -39,7 +39,7 @@ const questions = [
             if (githubInput) {
                 return true;
             } else {
-                console.log('Enter and Email');
+                console.log('Enter an Email');
                 return false;
             }
         }
@@ -60,12 +60,12 @@ const questions = [
     {
         type: 'input',
         name: 'installation',
-        message: 'Please provide step-by-step installation instructions for your project. ',
+        message: 'Provide step-by-step installation steps for your project. ',
         validate: installationInput => {
             if (installationInput) {
                 return true;
             } else {
-                console.log('Enter your installation instructions');
+                console.log('Enter your installation steps');
                 return false;
             }
         }
@@ -98,7 +98,7 @@ const questions = [
     {
         type: 'input',
         name: 'contribute',
-        message: 'Please provide guidelines for contributing. (Required)',
+        message: 'Provide guidelines for contributing.',
         when: ({ confirmContributers }) => {
             if (confirmContributers) {
                 return true;
@@ -110,7 +110,7 @@ const questions = [
             if (contributerInput) {
                 return true;
             } else {
-                console.log('Please enter contributer guidelines!');
+                console.log('Enter contributer guidelines!');
                 return false;
             }
         }
@@ -118,12 +118,12 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'Please provide instructions on how to Test.',
+        message: 'Provide instructions on how to Test.',
         validate: testInput => {
             if (testInput) {
                 return true;
             } else {
-                console.log('Eenter your use test instructions');
+                console.log('Enter your use test instructions');
                 return false;
             }
         }
