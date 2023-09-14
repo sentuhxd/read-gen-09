@@ -87,7 +87,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license will you use for your project?',
-        choices: ['agpl', 'apache', 'mit', 'no license']
+        choices: ['mit', 'no license']
     },
     {
         type: 'confirm',
