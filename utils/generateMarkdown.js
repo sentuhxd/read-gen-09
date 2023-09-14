@@ -23,7 +23,7 @@ const generateMarkdown = data => {
   This project is using ${data.license}
 
   ## Contributing 
-  ${data.contributing}
+  ${data.contributers}
 
   ## Test
   ${data.test}

@@ -90,30 +90,10 @@ const questions = [
         choices: ['mit', 'no license']
     },
     {
-        type: 'confirm',
-        name: 'confirmContributers',
-        message: 'Would you like to allow other developers to contribute?',
-        default: true
-    },
-    {
         type: 'input',
-        name: 'contribute',
-        message: 'Provide guidelines for contributing.',
-        when: ({ confirmContributers }) => {
-            if (confirmContributers) {
-                return true;
-            } else {
-                return false;
-            }
-        },
-        validate: contributerInput => {
-            if (contributerInput) {
-                return true;
-            } else {
-                console.log('Enter contributer guidelines!');
-                return false;
-            }
-        }
+        name: 'contributers',
+        message: 'Would you like to allow other developers to contribute?',
+        
     },
     {
         type: 'input',
